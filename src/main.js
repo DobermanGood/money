@@ -2,12 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import ElementUI from 'element-ui'
 import store from './store'
 import App from './App'
 
 Vue.use(VueRouter)
-Vue.use(ElementUI)
 
 import routes from './routes'
 

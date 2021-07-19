@@ -1,21 +1,33 @@
 <template>
   <footer class="footer">
-    <div class="container">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Vue Router Example</strong> by <a href="https://github.com/teepluss">Teepluss</a>. This is just a simple vue route app made with vue and vue-router.
-        </p>
-        <p>
-          <a class="icon" href="https://github.com/teepluss">
-            <i class="fa fa-road"></i>
-          </a>
-        </p>
-      </div>
-    </div>
+    <ul class="list">
+      <li>Счета</li>
+      <li>Категории</li>
+      <li>Операции</li>
+      <li>Обзор</li>
+    </ul>
   </footer>
 </template>
+
 <script>
 export default {
   name: 'foot'
 }
 </script>
+
+<style scoped lang="scss">
+  footer.footer {
+    position:fixed;
+    bottom:50px;
+    left:0;
+    right:0;
+    z-index:1000;
+  }
+
+  ul.list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style>
